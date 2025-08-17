@@ -1,6 +1,11 @@
 import os
 import environ
 from pathlib import Path
+from dotenv import load_dotenv
+load_dotenv()
+
+CHAPA_SECRET_KEY = os.getenv("CHAPA_SECRET_KEY")
+
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
